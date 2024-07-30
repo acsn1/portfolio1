@@ -1,0 +1,22 @@
+.hover-underline {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    transform-origin: center;
+    transition: transform .3s ease-out;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:brown;
+}
+
+.hover-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+  }
